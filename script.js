@@ -14,3 +14,25 @@ function addToCart(productName) {
     // Log to console for demonstration
     console.log(`Added to cart: ${productName}`);
 }
+// Function 3: Handle Contact Form Submission
+function handleFormSubmit(event) {
+    event.preventDefault();
+    
+    // Get form values
+    const name = document.getElementById('name').value;
+    const email = document.getElementById('email').value;
+    const subject = document.getElementById('subject').value;
+    
+    if (name && email && subject) {
+        const confirmMessage = `Thank you, ${name}!\n\nYour message has been submitted successfully.\nWe'll get back to you at ${email} within 24 hours.\n\nSubject: ${subject}`;
+        alert(confirmMessage);
+        
+        // Reset form
+        document.querySelector('.contact-form').reset();
+        
+        // Log to console
+        console.log('Form submitted:', {name, email, subject});
+    } else {
+        alert('Please fill out all required fields.');
+    }
+}
