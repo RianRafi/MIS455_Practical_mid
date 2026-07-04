@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products - TechGear</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Name: [Your Name] | ID: [Your ID] -->
+
+    <!-- Header -->
+    <header class="header">
+        <div class="header-content">
+            <div class="logo">
+                <h1>TechGear</h1>
+                <p class="tagline">Your Ultimate Tech Solutions</p>
+            </div>
+        </div>
+    </header>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <ul class="nav-list">
+            <li><a href="index.html" class="nav-link">Home</a></li>
+            <li><a href="products.html" class="nav-link active">Products</a></li>
+            <li><a href="contact.html" class="nav-link">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="container">
+        <section class="intro-section">
+            <h2>Our Products</h2>
+            <p>Browse our curated collection of premium tech gadgets and accessories. We offer the latest innovations from top brands, carefully selected for quality and performance. From smartphones to wearables, find everything you need to stay connected and productive.</p>
+            <p>Each product in our catalog has been thoroughly tested and verified for authenticity. We stand behind every item we sell with our satisfaction guarantee. Discover innovative solutions that fit your lifestyle and budget.</p>
+        </section>
+
+        <!-- Products Grid -->
+        <section class="products-grid">
+            <div class="product-card">
+                <img src="Screenshot 2026-07-03 215300.jpg" alt="Wireless Headphones">
+                <h3>Wireless Headphones</h3>
+                <p>Premium noise-cancelling wireless headphones with 30-hour battery life and superior sound quality.</p>
+                <div class="product-price">$99.99</div>
+                <button class="btn btn-secondary" onclick="addToCart('Wireless Headphones')">Add to Cart</button>
+            </div>
+
+            <div class="product-card">
+                <img src="smartwatch.jpg" alt="Smart Watch">
+                <h3>Smart Watch Pro</h3>
+                <p>Advanced fitness tracking, heart rate monitoring, and smartphone notifications all on your wrist.</p>
+                <div class="product-price">$199.99</div>
+                <button class="btn btn-secondary" onclick="addToCart('Smart Watch Pro')">Add to Cart</button>
+            </div>
+
+            <div class="product-card">
+                <img src="usbCcable.jpg" alt="USB-C Cable">
+                <h3>Durable USB-C Cable</h3>
+                <p>High-speed data transfer cable compatible with all USB-C devices. Reinforced design for durability.</p>
+                <div class="product-price">$19.99</div>
+                <button class="btn btn-secondary" onclick="addToCart('Durable USB-C Cable')">Add to Cart</button>
+            </div>
+
+            <div class="product-card">
+                <img src="powerbank.jpg" alt="Portable Charger">
+                <h3>Portable Power Bank</h3>
+                <p>20,000mAh capacity power bank with fast charging technology for all your devices.</p>
+                <div class="product-price">$34.99</div>
+                <button class="btn btn-secondary" onclick="addToCart('Portable Power Bank')">Add to Cart</button>
+            </div>
+
+            <div class="product-card">
+                <img src="phoneStand.jpg" alt="Phone Stand">
+                <h3>Adjustable Phone Stand</h3>
+                <p>Aluminum phone stand with adjustable height and angle. Compatible with all smartphones and tablets.</p>
+                <div class="product-price">$24.99</div>
+                <button class="btn btn-secondary" onclick="addToCart('Adjustable Phone Stand')">Add to Cart</button>
+            </div>
+
+            <div class="product-card">
+                <img src="glassProtector.jpg" alt="Screen Protector">
+                <h3>Tempered Glass Protector</h3>
+                <p>Premium tempered glass screen protector with anti-scratch and anti-glare technology.</p>
+                <div class="product-price">$12.99</div>
+                <button class="btn btn-secondary" onclick="addToCart('Tempered Glass Protector')">Add to Cart</button>
+            </div>
+        </section>
+    </main>
