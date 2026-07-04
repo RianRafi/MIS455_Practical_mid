@@ -393,3 +393,13 @@ main.container {
     transform: translateY(-3px);
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 }
+
+/* ========== CTA Section ========== */
+.cta-section {
+    text-align: center;
+    margin: 40px 0;
+    padding: 30px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}

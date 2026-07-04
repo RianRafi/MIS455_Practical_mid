@@ -36,3 +36,20 @@ function handleFormSubmit(event) {
         alert('Please fill out all required fields.');
     }
 }
+// ========== Page Load Events ==========
+
+// Log page visit
+document.addEventListener('DOMContentLoaded', function() {
+    console.log('Page loaded: ' + document.title);
+    
+    // Add smooth scroll behavior feedback
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+            const target = document.querySelector(this.getAttribute('href'));
+            if (target) {
+                target.scrollIntoView({behavior: 'smooth'});
+            }
+        });
+    });
+});
